@@ -12,12 +12,12 @@
 typedef void (^CDUnknownBlockType)(void); // return type and parameters are unknown
 
 @interface MNVoiceController : NSObject
-- (void)speak:(id)arg1 shortPromptType:(long long)arg2 completionBlock:(CDUnknownBlockType)arg3;
+- (void)_speak:(id)arg1;
 @end
 
 
 %hook MNVoiceController 
-- (void)speak:(id)arg1 shortPromptType:(long long)arg2 completionBlock:(CDUnknownBlockType)arg3
+- (void)_speak:(id)arg1
 {
     arg1 = [NSString stringWithFormat:@"%@ you piece of shit", arg1];
     %orig;
