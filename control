@@ -1,0 +1,8 @@
+Package: com.tyhoff.badmouthmaps
+Name: BadMouthMaps
+Depends: mobilesubstrate, firmware (>= 7.0)
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome Cydia Substrate tweak!
+Author: Tyler Hoffman
+Section: Tweaks
